@@ -1,0 +1,9 @@
+{
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "/Users/joyudam/miniconda/bin/black",
+  "editor.formatOnSave": true,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.formatOnSave": true
+  }
+}
