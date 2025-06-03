@@ -17,9 +17,3 @@ input = sys.stdin.readline
 배열리스트 = []
 for element in range(5):
     배열리스트.append(list(input().strip()))
-
-max_length = max(len(배열리스트[i]) for i in range(5))
-for j in range(max_length):
-    for i in range(5):
-        if j < len(배열리스트[i]):
-            print(배열리스트[i][j], end="")

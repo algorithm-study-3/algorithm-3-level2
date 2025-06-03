@@ -1,0 +1,42 @@
+import sys
+from io import StringIO
+
+
+sys.stdin = StringIO(
+    """3 3
+1 1 1
+2 2 2
+0 1 0
+3 3 3
+4 4 4
+5 5 100"""
+)
+
+input = sys.stdin.readline
+
+
+n, m = list(map(int, input().split(" ")))
+
+first = []
+for i in range(n):
+    first.append(list(map(int, input().strip().split(" "))))
+# print(first)
+
+second = []
+for i in range(n):
+    second.append(list(map(int, input().strip().split(" "))))
+# print(second)
+
+answer = [[0] * m for i in range(n)]
+
+
+for i in range(n):
+    for j in range(m):
+        answer[i][j] = first[i][j] + second[i][j]
+
+for element in answer:
+    print(" ".join(map(str, element)))
+
+
+# for row in answer:
+#     print(" ".join(map(str, row)))
