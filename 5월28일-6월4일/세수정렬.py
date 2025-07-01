@@ -10,8 +10,6 @@ sys.stdin = StringIO("""3 1 2""")
 input = sys.stdin.readline
 
 
-answer = input().strip().split(" ")
+answer = list(map(int, input().strip().split(" ")))
 
-for i in range(len(answer)):
-  if i < 
-  
+print(" ".join(map(str, sorted(answer))))
